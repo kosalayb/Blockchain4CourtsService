@@ -1,0 +1,112 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <!-- <script src="web3.js"></script> -->
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!--     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="sha256.js"></script>
+    <script src="add.js"></script>
+    <script src="authentic.js"></script>
+    <script src="view.js"></script>
+    <title> SUPREME COURT ARCHIVES - Adding Cases to Blockchain</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12">
+          <br></br>
+          <h2 style="text-align:center">IRISH COURT ARCHIVES - Adding Cases to Blockchain</h2>
+            <br></br>
+            <form id="setData">
+
+              <div class="form-group row">
+                <label class="col-sm-1 control-label" for="title">Title </label>
+                <div class="col-sm-10">
+                  <input type="text" id="title" class="form-control" placeholder="Enter Title"></input>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-1 control-label" for="date">Date Delivered </label>
+                <div class="col-sm-10">
+                    <input type="text" id="date" class="form-control" placeholder="Enter Date"></input>
+                 </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-1 control-label" for="citation">Citation </label>
+                <div class="col-sm-10">
+                    <input type="text" id="citation" class="form-control" placeholder="Enter Citation"></input>
+                 </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-1 control-label" for="url">URL </label>
+                <div class="col-sm-10">
+                    <input type="text" id="url" class="form-control" placeholder="Enter URL"></input>
+                 </div>
+              </div>
+            
+              <div class="form-group row">
+                <div class="col-sm-10">
+                  <button type="button" id="addRecords"  class="btn btn-primary">Submit</button>
+                  <button type="button" id="clearRecords"  class="btn btn-primary">Clear</button>
+                </div>
+              </div>
+
+            </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <table id='caseTable' class="table">
+      <thead>
+        <tr>
+          <th data-field="title" scope="col">TITLE</th>
+          <th data-field="date" scope="col">DATE DELIVERED</th>
+          <th data-field="citation" scope="col">CITATION</th>
+          <th data-field="url" scope="col">URL</th>
+          <th data-field="details" scope="col">BLOCKCHAIN DETAILS</th>
+          <th data-field="hash" scope="col">DOCUMENT HASH</th>
+        </tr>
+      </thead>
+      <tbody >
+<!--         <tr>
+          <th>Hussain -v- Health Service Executive</th>
+          <td>06/04/2017</td>
+          <td>[2017] IESC 22</td>
+          <td class="url" id="[2017] IESC 22"><a href="http://www.bailii.org/ie/cases/IESC/2017/S22.html" class="btn btn-primary">OPEN</a></td>
+          <td id="detailsID"><a href="" class="btn btn-primary">Details</a></td>
+        </tr> -->
+<!--         <tr>
+          <th>Keaney -v- O'Sullivan & ors</th>
+          <td>05/04/2017</td>
+          <td>[2017] IESC 23</td>
+          <td class="url" id="[2017] IESC 23"><a href="http://www.bailii.org/ie/cases/IESC/2017/S23.html" class="btn btn-primary">OPEN</a></td>
+          <td><a href="" class="btn btn-primary">Details</a></td>
+        </tr>
+        <tr>
+          <th>Minister for Justice and Equality -v- O'Connor</th>
+          <td>30/03/2017</td>
+          <td>[2017] IESC 21</td>
+          <td class="url" id="[2017] IESC 21"><a href="http://www.bailii.org/ie/cases/IESC/2017/S21.html" class="btn btn-primary">OPEN</a></td>
+          <td><a href="" class="btn btn-primary">Details</a></td>
+        </tr> -->
+      </tbody>
+    </table>
+
+
+
+
+
+  </body>
+
+</html>

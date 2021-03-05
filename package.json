@@ -21,5 +21,11 @@
     "nodemon": "^1.17.3",
     "truffle": "^5.1.37",
     "truffle-contract": "3.0.6"
+  },
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "pdf-parse": "^1.1.1",
+    "pdfreader": "^1.0.7",
+    "web3": "^1.2.11"
   }
 }
